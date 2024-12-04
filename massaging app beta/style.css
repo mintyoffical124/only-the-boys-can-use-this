@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Set default background to black */
+    color: white; /* Set default text color to white */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#login-section, #signup-section, #app-main, #settings {
+    background-color: #333; /* Dark background for content */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #555; /* Dark input background */
+    color: white;
+    border: 1px solid #888;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#sidebar {
+    width: 200px;
+    margin-right: 20px;
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+}
+
+#chat {
+    flex-grow: 1;
+}
+
+#chat-window {
+    height: 300px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: #222; /* Dark background for chat window */
+}
+
+#message-input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #555;
+    color: white;
+}
+
+#friend-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul#friend-list li {
+    padding: 5px;
+    background-color: #444;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+ul#friend-list li:hover {
+    background-color: #666;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Section -->
+        <div id="login-section">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Enter Username" />
+            <input type="password" id="login-password" placeholder="Enter Password" />
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a></p>
+        </div>
+
+        <!-- Sign Up Section -->
+        <div id="signup-section" style="display:none;">
+            <h2>Sign Up</h2>
+            <input type="text" id="signup-username" placeholder="Enter Username" />
+            <input type="password" id="signup-password" placeholder="Enter Password" />
+            <button onclick="signUp()">Sign Up</button>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+        </div>
+
+        <!-- Main App Section -->
+        <div id="app-main" style="display:none;">
+            <div id="sidebar">
+                <h2>Friends</h2>
+                <ul id="friend-list"></ul>
+                <input type="text" id="friend-username" placeholder="Enter friend's username" />
+                <button onclick="addFriend()">Add Friend</button>
+                <button onclick="openSettings()">Settings</button>
+            </div>
+            <div id="chat">
+                <div id="chat-window"></div>
+                <input type="text" id="message-input" placeholder="Type a message" />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+
+        <!-- Settings Section -->
+        <div id="settings" style="display:none;">
+            <h2>Settings</h2>
+            <button onclick="blockUser()">Block User</button>
+            <button onclick="logOut()">Log Out</button>
+            <button onclick="closeSettings()">Close Settings</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
